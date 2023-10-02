@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+
+  /* ### Neutral */
+
+  --main-bg: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+li{
+    list-style-type: none;
+}
+body{
+    background-color: var(--main-bg);
+    font-family: "outfit";
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.container{
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    width: 350px;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.image-equilibrium{
+    width:100%;
+    height: 300px;
+    border-radius: 0.5rem;
+}
+
+.container .main-image{
+  position: relative;
+}
+
+.main-image .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 300px;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: var(--cyan);
+  border-radius: 0.5rem;
+}
+
+.container .main-image:hover .overlay {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+h1{
+  color: white;
+  margin: 1rem 0;
+  font-weight: 400;
+}
+
+.balance{
+  color: var(--soft-blue);
+  margin: 1rem 0;
+  font-weight: 300;
+}
+
+.container ul{
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 1rem;
+}
+.container ul li{
+  display:flex;
+  align-items: center;
+}
+
+li img{
+  margin-right: 0.5rem;
+}
+footer{
+  display:flex;
+  align-items: center;
+}
+
+footer img{
+  width: 2.5rem;
+  border: 1px solid lightyellow;
+  border-radius: 50%;
+}
+
+footer p{
+  margin-left: 0.75rem;
+  color: var(--soft-blue);
+  font-weight: 300;
+}
+
+.eth{
+  color: var(--cyan);
+}
+h1:hover{
+  color: var(--cyan);
+  cursor: pointer;
+}
+
+li{
+  color: var(--soft-blue);
+}
+
+footer span{
+  color:white;
+}
+footer span:hover{
+  cursor: pointer;
+  color: var(--cyan);
+}
+.attribution{
+  color: var(--soft-blue);
+  font-size: 14px;
+}
